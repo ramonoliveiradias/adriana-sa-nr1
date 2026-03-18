@@ -13,7 +13,7 @@ export default function ContactSection() {
     e.preventDefault();
     const nameText = name.trim() || "...";
     const companyText = company.trim() || "...";
-    const msgText = `Olá, meu nome é ${nameText}, falo em nome da empresa ${companyText}`;
+    const msgText = `Olá, meu nome é ${nameText}, falo em nome da empresa ${companyText}, gostaria de saber sobre o sistema de NR1`;
     const text = encodeURIComponent(msgText);
     window.open(`https://wa.me/5571999334894?text=${text}`, "_blank");
   };
