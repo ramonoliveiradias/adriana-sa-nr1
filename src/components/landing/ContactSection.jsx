@@ -1,10 +1,26 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 export default function ContactSection() {
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const nameText = name.trim() || "...";
+    const companyText = company.trim() || "...";
+    const messageText = message.trim();
+    const defaultMsg = `Olá, meu nome é ${nameText}, falo em nome da empresa ${companyText}`;
+    const msgText = messageText || defaultMsg;
+    const text = encodeURIComponent(msgText);
+    window.open(`https://wa.me/5571999334894?text=${text}`, "_blank");
+  };
+
   return (
     <section id="contato" className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,17 +79,16 @@ export default function ContactSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="bg-gray-50/80 rounded-2xl border border-gray-100 p-8">
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  window.open("https://wa.me/5571999334894", "_blank");
-                }}
-                className="space-y-4"
-              >
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-xs font-semibold text-gray-600 mb-1.5 block">Nome</label>
-                    <Input placeholder="Seu nome completo" className="rounded-xl border-gray-200 bg-white" />
+                    <Input
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Seu nome completo"
+                    className="rounded-xl border-gray-200 bg-white"
+                  />
                   </div>
                   <div>
                     <label className="text-xs font-semibold text-gray-600 mb-1.5 block">Email</label>
@@ -82,11 +97,18 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <label className="text-xs font-semibold text-gray-600 mb-1.5 block">Empresa</label>
-                  <Input placeholder="Nome da empresa" className="rounded-xl border-gray-200 bg-white" />
+                  <Input
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                    placeholder="Nome da empresa"
+                    className="rounded-xl border-gray-200 bg-white"
+                  />
                 </div>
                 <div>
                   <label className="text-xs font-semibold text-gray-600 mb-1.5 block">Mensagem</label>
                   <Textarea
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     placeholder="Como podemos ajudar?"
                     rows={4}
                     className="rounded-xl border-gray-200 bg-white resize-none"
