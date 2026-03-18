@@ -8,15 +8,12 @@ import { Textarea } from "@/components/ui/textarea";
 export default function ContactSection() {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
-  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const nameText = name.trim() || "...";
     const companyText = company.trim() || "...";
-    const messageText = message.trim();
-    const defaultMsg = `Olá, meu nome é ${nameText}, falo em nome da empresa ${companyText}`;
-    const msgText = messageText || defaultMsg;
+    const msgText = `Olá, meu nome é ${nameText}, falo em nome da empresa ${companyText}`;
     const text = encodeURIComponent(msgText);
     window.open(`https://wa.me/5571999334894?text=${text}`, "_blank");
   };
@@ -102,16 +99,6 @@ export default function ContactSection() {
                     onChange={(e) => setCompany(e.target.value)}
                     placeholder="Nome da empresa"
                     className="rounded-xl border-gray-200 bg-white"
-                  />
-                </div>
-                <div>
-                  <label className="text-xs font-semibold text-gray-600 mb-1.5 block">Mensagem</label>
-                  <Textarea
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Como podemos ajudar?"
-                    rows={4}
-                    className="rounded-xl border-gray-200 bg-white resize-none"
                   />
                 </div>
                 <Button
