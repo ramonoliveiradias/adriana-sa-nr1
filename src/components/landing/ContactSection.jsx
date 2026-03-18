@@ -31,7 +31,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <div className="text-xs font-medium text-gray-400 mb-0.5">WhatsApp</div>
-                  <div className="text-sm font-bold text-gray-900">(71) 98722-7278</div>
+                  <div className="text-sm font-bold text-gray-900">(71) 99933-4894</div>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -40,7 +40,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <div className="text-xs font-medium text-gray-400 mb-0.5">Email</div>
-                  <div className="text-sm font-bold text-gray-900">contato@validanr1.com.br</div>
+                  <div className="text-sm font-bold text-gray-900">contato@sagestaohumana.com</div>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -66,7 +66,7 @@ export default function ContactSection() {
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
-                  window.open("https://wa.me/5571987227278", "_blank");
+                  window.open("https://wa.me/5571999334894", "_blank");
                 }}
                 className="space-y-4"
               >

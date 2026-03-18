@@ -68,10 +68,10 @@ export default function ForWhoSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
-            Soluções da <span className="text-blue-600">SÁ GESTÃO</span> para cada perfil de cliente
+            Soluções da <span className="text-blue-600">Sá Gestão e Desenvolvimento Humano</span> para cada perfil de cliente
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            A SÁ GESTÃO foi desenvolvida para apoiar organizações e profissionais que atuam com gestão de pessoas, saúde ocupacional e segurança do trabalho, oferecendo ferramentas digitais para avaliação, monitoramento e gestão de riscos psicossociais.
+            A Sá Gestão e Desenvolvimento Humano foi desenvolvida para apoiar organizações e profissionais que atuam com gestão de pessoas, saúde ocupacional e segurança do trabalho, oferecendo ferramentas digitais para avaliação, monitoramento e gestão de riscos psicossociais.
           </p>
         </motion.div>
 

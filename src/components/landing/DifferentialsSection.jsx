@@ -6,7 +6,7 @@ const differentials = [
     icon: Clock,
     title: "Avaliações mais rápidas e seguras",
     description:
-      "RA plataforma automatiza processos de avaliação psicossocial, reduzindo drasticamente o tempo necessário para coleta e análise de dados.\nAlém disso, todo o processo preserva o anonimato e a confidencialidade das informações dos colaboradores.",
+      "A plataforma automatiza processos de avaliação psicossocial, reduzindo drasticamente o tempo necessário para coleta e análise de dados.\nAlém disso, todo o processo preserva o anonimato e a confidencialidade das informações dos colaboradores.",
     highlight: "ATÉ 99%",
     highlightLabel: "de redução no tempo de avaliação",
   },
@@ -48,7 +48,7 @@ export default function DifferentialsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
-            Por que utilizar o <span className="text-blue-600">SÁ GESTÃO</span>?
+            Por que utilizar o sistema da <span className="text-blue-600">Sá Gestão e Desenvolvimento Humano</span>?
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
             Centenas de organizações já utilizam nossa plataforma para gerenciar riscos psicossociais de forma moderna, segura e em conformidade com a legislação. Com tecnologia e automação, ajudamos empresas a transformar dados em decisões estratégicas.

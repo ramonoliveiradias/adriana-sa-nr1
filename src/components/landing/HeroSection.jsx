@@ -41,8 +41,8 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-xl">
-               Mapeie e gerencie riscos psicossociais de forma estruturada e em conformidade com a legislação.
-A solução da SÁ Gestão e Desenvolvimento Humano automatiza o processo de avaliação, fortalece a governança interna e oferece respaldo técnico para atender exigências legais e processos de auditoria.
+              Mapeie e gerencie riscos psicossociais de forma estruturada e em conformidade com a legislação.
+              A solução da SÁ Gestão e Desenvolvimento Humano automatiza o processo de avaliação, fortalece a governança interna e oferece respaldo técnico para atender exigências legais e processos de auditoria.
 
             </p>
 
@@ -50,7 +50,7 @@ A solução da SÁ Gestão e Desenvolvimento Humano automatiza o processo de ava
               <Button
                 size="lg"
                 className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 h-13 text-base font-semibold shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 transition-all"
-                onClick={() => window.open("https://wa.me/5571987227278", "_blank")}
+                onClick={() => window.open("https://wa.me/5571999334894", "_blank")}
               >
                 <CheckCircle className="h-5 w-5 mr-2" />
                 Agendar demonstração
