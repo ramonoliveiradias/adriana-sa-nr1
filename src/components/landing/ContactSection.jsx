@@ -84,11 +84,11 @@ export default function ContactSection() {
                   <div>
                     <label className="text-xs font-semibold text-gray-600 mb-1.5 block">Nome</label>
                     <Input
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Seu nome completo"
-                    className="rounded-xl border-gray-200 bg-white"
-                  />
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="Seu nome completo"
+                      className="rounded-xl border-gray-200 bg-white"
+                    />
                   </div>
                   <div>
                     <label className="text-xs font-semibold text-gray-600 mb-1.5 block">Email</label>
