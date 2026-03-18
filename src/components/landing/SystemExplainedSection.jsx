@@ -95,7 +95,7 @@ export default function SystemExplainedSection() {
             Uma plataforma completa para gestão de riscos psicossociais
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-            A SÁ Gestão e Desenvolvimento Humano concentra em um único sistema todas as funcionalidades necessárias para acompanhar, analisar e documentar a gestão de riscos psicossociais nas organizações.\nDa coleta de dados à geração de relatórios técnicos, a plataforma apoia empresas e profissionais em todas as etapas do processo.
+            A SÁ Gestão e Desenvolvimento Humano concentra em um único sistema todas as funcionalidades necessárias para acompanhar, analisar e documentar a gestão de riscos psicossociais nas organizações. Da coleta de dados à geração de relatórios técnicos, a plataforma apoia empresas e profissionais em todas as etapas do processo.
           </p>
         </motion.div>
 
